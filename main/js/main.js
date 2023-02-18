@@ -2,6 +2,7 @@ window.addEventListener('load', ()=>{
     makeStackList()
     makeWorkList()
 })
+
 var makeStackList = ()=>{
     var stackList = ['Html5', 'Css3', 'Javascript', 'j-query', 'Vue', 'Nuxt.js', 'Scss', 'Python', 'Django', 'pandas', 'Crawling', 'Scraping', 'Axios', 'Ajax', 'MongoDB Atlas', 'REST API', 'Adobe Photoshop', 'Adobe XD', 'Figma', 'TweenMax', 'ScrollMagic'];
     var list = document.querySelector('.stack_list');
@@ -37,7 +38,7 @@ var makeWorkList = ()=>{
         {title: 'Ferrari - News Letter',
         description: '카드 모션을 이용한 월간 뉴스레터',
         stacks : ['Html', 'Css', 'Javascript', 'TweenMax', 'Swiper.js'],
-        link: '.http://ferrarifmk.com',
+        link: 'http://ferrarifmk.com',
         year: '2021',
         img: 'ferrari.png'
         },
@@ -65,7 +66,7 @@ var makeWorkList = ()=>{
         {title: '서울과학기술대학교 산업디자인과 졸업전시 홈페이지',
         description: '2022년도 졸업전시회 안내 및 방명록, 전시자 관리자페이지 개발',
         stacks : ['Vue', 'Nuxt.js', 'Scss', 'MongoDB Atlas', 'Axios'],
-        link: 'www.seoultech-id-degreeshow-2022.com',
+        link: 'https://www.seoultech-id-degreeshow-2022.com',
         year: 2022,
         img: 'seoultech.png',
         },
@@ -83,17 +84,19 @@ var makeWorkList = ()=>{
         year: '2018',
         img: 'ikseondong.png'
         },
-        {title: '투뿔 곱창 홈페이지',
+        {title: '투플 곱창 홈페이지',
         description: '투뿔 곱창 및 막창 제품 소개 반응형 홈페이지',
         stacks :  ['Vue', 'Nuxt.js', 'Scss', 'email.js'],
-        link: 'http://twople-store.com/',
+        // link: 'http://twople-store.com/',
+        link: null,
         year: '2022',
         img: 'twople.jpg'
         },
         {title: 'NOW FITNESS',
         description: 'NOW FITNESS 시설 소개 및 프로그램 안내 반응형 홈페이지',
         stacks :  ['Vue', 'Nuxt.js', 'Scss', 'email.js'],
-        link: 'http://twople-store.com/',
+        // link: 'http://twople-store.com/',
+        link: null,
         year: '2022',
         img: 'nowfitness.png'
         },
@@ -102,14 +105,17 @@ var makeWorkList = ()=>{
 
     workList.forEach((work, idx) => {
         list.innerHTML += `<div class='swiper-slide work_box'>
-                                <a href='${work.link}' class='thumb' target='_blank'>
+                                <a ${work.link == null ? '' : 'href='+work.link } class='thumb' target="_blank" >
                                     <img src='./img/thumb/${work.img}' />
                                 </a>
                                 <div class='info'>
-                                    <b>${work.title} <span>${work.year}년 </span></b>
+                                    <p><b>${work.title}</b> <span>${work.year}년 </span></p>
                                     <ul class='stacks'></ul>
                                     <p>${work.description}</p>
                                 </div>
+                                <div class="dim ${work.link == null ? 'fin' : ''}">
+                                    호스팅 기간 만료
+                                </diV>
                             </div>`;
 
         makeWorksStack(work.stacks, idx)

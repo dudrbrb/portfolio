@@ -11,11 +11,16 @@ window.addEventListener('load', ()=>{
         slidesPerView: 3,
         spaceBetween: 30,
         mousewheel: false,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
     });
 
     mainSwiper.on('slideChange', (e) => {
         var idx = mainSwiper.activeIndex;
         idx == 0 ? nav.classList.remove('b') : nav.classList.add('b') ;
+        mainSwiper.allowSlideNext = (idx==2 ? false :  true)
         
     });
 
@@ -26,4 +31,8 @@ window.addEventListener('load', ()=>{
         })
     })
 
+    var btn = document.querySelector('.arrow');
+    btn.addEventListener('click', ()=>{
+        mainSwiper.slideTo(1)
+    })
 })
