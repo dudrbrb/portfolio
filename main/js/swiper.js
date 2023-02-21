@@ -5,6 +5,7 @@ window.addEventListener('load', ()=>{
     var mainSwiper = new Swiper(".main-swiper-container", {
         slidesPerView: 1,
         mousewheel: true,
+        allowTouchMove: true
     });
 
     var workSwiper = new Swiper(".work-swiper-container", {
