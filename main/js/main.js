@@ -66,7 +66,7 @@ var makeWorkList = ()=>{
         {title: '서울과학기술대학교 산업디자인과 졸업전시 홈페이지',
         description: '2022년도 졸업전시회 안내 및 방명록, 전시자 관리자페이지 개발',
         stacks : ['Vue', 'Nuxt.js', 'Scss', 'MongoDB Atlas', 'Axios'],
-        link: 'https://www.seoultech-id-degreeshow-2022.com',
+        link: 'http://www.seoultech-id-degreeshow-2022.com',
         year: 2022,
         img: 'seoultech.png',
         },
