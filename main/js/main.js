@@ -35,13 +35,6 @@ var makeWorkList = ()=>{
         year: '2020',
         img: 'tip.png'
         },
-        {title: 'Ferrari - News Letter',
-        description: '카드 모션을 이용한 월간 뉴스레터',
-        stacks : ['Html', 'Css', 'Javascript', 'TweenMax', 'Swiper.js'],
-        link: 'http://ferrarifmk.com',
-        year: '2021',
-        img: 'ferrari.png'
-        },
         {title: '현대캐피탈 - 직원 전용 모바일 매거진',
         description: '인터렉티브 모션이 나타나는 스와이퍼 모바일 매거진',
         stacks : ['Html', 'Css', 'Javascript', 'TweenMax', 'Swiper.js'],
@@ -83,6 +76,13 @@ var makeWorkList = ()=>{
         link: '../ikseon-dong',
         year: '2018',
         img: 'ikseondong.png'
+        },
+         {title: 'Ferrari - News Letter',
+        description: '카드 모션을 이용한 월간 뉴스레터',
+        stacks : ['Html', 'Css', 'Javascript', 'TweenMax', 'Swiper.js'],
+//         link: 'http://ferrarifmk.com',
+        year: '2021',
+        img: 'ferrari.png'
         },
         {title: '투플 곱창 홈페이지',
         description: '투뿔 곱창 및 막창 제품 소개 반응형 홈페이지',
