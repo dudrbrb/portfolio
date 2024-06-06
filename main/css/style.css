@@ -133,14 +133,21 @@ aside.b .bar{ background-color: #CDB3A4 }
 #Introduce {
     display: flex;
     flex-wrap: wrap;
-    align-content: flex-start
+    align-content: center;
+    align-items: center;
+}
+#Introduce .wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    margin-top: -100px;
 }
 #Introduce .title{
     width: 100%;
     height: 80px;
     position: relative;
     display: flex;
-    margin: 50px 0 30px;
+    margin: 0 0 80px;
 }
 #Introduce .title img{
     margin-left: auto;
@@ -197,6 +204,12 @@ aside.b .bar{ background-color: #CDB3A4 }
 #Works{
     display: flex;
     flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+#Works .wrapper{
+    display: flex;
+    flex-direction: column;
     align-content: flex-start;
 }
 #Works .title{
@@ -215,7 +228,7 @@ aside.b .bar{ background-color: #CDB3A4 }
     width: 70%;
     overflow: hidden;
     margin-left: 300px;
-    margin-top: 15vh;
+    margin-top: 5vh;
     position: relative;
     height: 530px;
 }
