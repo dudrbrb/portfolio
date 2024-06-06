@@ -1,3 +1,4 @@
+
 window.addEventListener('load', ()=>{
     var nav = document.querySelector('aside'),
         navList = document.querySelectorAll('nav li');
